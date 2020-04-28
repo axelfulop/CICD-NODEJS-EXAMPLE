@@ -15,12 +15,12 @@ phases:
       - npm install unit.js
   build:
     commands:
-      - echo Build started on `date`
+      - echo Build started on 'date'
       - echo Compiling the Node.js code
       - mocha test/test.js
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed on 'date'
 # Include only the files required for your application to run.
 # Do not use recursively include artifacts from node_modules directory as it will include unnecessary packages
 # used only for building and testing.
@@ -29,3 +29,5 @@ artifacts:
   files:
     - index.js
     - package.json
+    - node_modules/async/*
+    - node_modules/lodash/*
