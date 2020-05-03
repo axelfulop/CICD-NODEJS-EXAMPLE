@@ -17,8 +17,6 @@ phases:
     commands:
       - echo Build started on date +"%D %T
       - echo Compiling the Node.js code
-  test:
-    commands:
       - mocha test/test.js
       - Tested on date +"%D %T
   post_build:
