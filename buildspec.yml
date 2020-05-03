@@ -15,10 +15,10 @@ phases:
       - npm install unit.js
   build:
     commands:
-      - echo Build started on date +"%D %T
+      - echo Build started on date +"%D %T"
       - echo Compiling the Node.js code
       - mocha test/test.js
-      - Tested on date +"%D %T
+      - Tested on date +"%D %T"
   post_build:
     commands:
       - echo Build completed 
