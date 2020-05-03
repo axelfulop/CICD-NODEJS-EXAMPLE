@@ -13,12 +13,11 @@ phases:
       - echo Installing source NPM dependencies...
       - npm install
       - npm install unit.js
+      - npm test -- --watchAll=false
   build:
     commands:
-      - echo Build started on date +"%D %T"
+      - echo Build started on 'date'
       - echo Compiling the Node.js code
-      - mocha test/test.js
-      - Tested on date +"%D %T"
   post_build:
     commands:
       - echo Build completed 
