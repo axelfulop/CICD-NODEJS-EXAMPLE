@@ -32,3 +32,5 @@ artifacts:
     - test/test.js
     - node_modules/async/*
     - node_modules/lodash/*
+    - node_modules/mocha/*
+    - node_modules/bin/mocha
