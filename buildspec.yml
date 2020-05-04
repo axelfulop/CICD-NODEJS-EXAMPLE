@@ -13,14 +13,14 @@ phases:
       - echo Installing source NPM dependencies...
       - npm install
       - npm install unit.js
-      - npm test -- --watchAll=false
+      - npm test
   build:
     commands:
       - echo Build started on 'date'
       - echo Compiling the Node.js code
   post_build:
     commands:
-      - echo Build completed 
+      - echo Build completed
 # Include only the files required for your application to run.
 # Do not use recursively include artifacts from node_modules directory as it will include unnecessary packages
 # used only for building and testing.
