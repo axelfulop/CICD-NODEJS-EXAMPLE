@@ -8,7 +8,7 @@
     },
     "scripts": {
         "start": "node index.js",
-        "test": "mocha --timeout 80000 --exit"
+        "test": "mocha --timeout 100000 --exit"
     },
     "devDependencies": {
         "mocha": "^7.1.2",
