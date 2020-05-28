@@ -13,7 +13,7 @@ phases:
       - echo Installing source NPM dependencies...
       - npm install
       - npm install unit.js
-      - mocha --timeout 80000 --exit
+      - mocha --timeout 100000 --exit
   build:
     commands:
       - echo Build started on 'date'
